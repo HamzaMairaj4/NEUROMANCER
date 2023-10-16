@@ -6,6 +6,7 @@ from cryptography.fernet import Fernet
 import pickle
 import bootup
 
+#Create the login window
 loki = Tk()
 loki.title("GPI - NEUROMANCER V3.01.3")
 loki.geometry ("580x500")
