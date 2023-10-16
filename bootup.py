@@ -1,6 +1,7 @@
 import os
 import time
 
+#Write "Booting..." in the console to let user know code is still working
 def startup():
   for x in range(5):
     print("Booting.")
@@ -13,6 +14,7 @@ def startup():
     time.sleep(0.5)
     os.system('clear')
 
+#Write a message for gravitas
 def overdrive(msg):
   sr=""
   for x in msg:
@@ -25,6 +27,7 @@ def overdrive(msg):
     else:
       break
 
+#Write a message for gravitas after booting up
 def chibaCityBlues(msg):
   startup()
   overdrive(msg)

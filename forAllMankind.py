@@ -69,6 +69,7 @@ def armstrong(fileName,tableName,e1,e2,e3,e4):
    f.write(str(userID1))
    f.close()
 
+#Login Function
 def aldrin(fileName,tableName,e1,e2):
   conn = sqlite3.connect(fileName)
   c = conn.cursor()
@@ -88,6 +89,7 @@ def aldrin(fileName,tableName,e1,e2):
   bootup.overdrive("Welcome, "+discovery[1]+" "+discovery[2]+", to NEUROMANCER")
   neuromancer.cyberspace()
 
+#Login Page
 def aldrinV():
   mainframe=Tk()
   mainframe.geometry ("580x500")
@@ -110,6 +112,7 @@ def aldrinV():
   avgButton.grid(row=3,column=0)
   mainframe.mainloop()
 
+#Create Account Page
 def armstrongV():
   mainframe=Tk()
   mainframe.geometry ("580x500")
@@ -147,12 +150,14 @@ def armstrongV():
   mainframe.mainloop()
   print('Account created!')
 
+#Encrypt Password
 def galileo(message):
   key= Fernet.generate_key()
   frank = Fernet(key)
   encMessage=frank.encrypt(message.encode())
   return {encMessage:frank}
 
+#Decrypt Password
 def atlantis(passling):
   f=open('orion.pkl','rb')
   orion=pickle.load(f)

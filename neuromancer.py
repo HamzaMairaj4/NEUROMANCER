@@ -1,5 +1,6 @@
 from tkinter import *
 
+#Define the GUI
 def cyberspace():
   neuromancer = Tk()
   neuromancer.title('GPI - NEUROMANCER V3.0.01.3')
